@@ -1,0 +1,42 @@
+//
+// Multistep stepper
+//
+
+// Custom
+.stepper.stepper-pills.stepper-multistep {
+    --dex-stepper-pills-size: 46px;
+    --dex-stepper-icon-border-radius: 9px;
+    --dex-stepper-icon-check-size: 1.25rem;
+
+    --dex-stepper-icon-bg-color: rgba(255, 255, 255, 0.03);
+    --dex-stepper-icon-bg-color-current: var(--dex-success);
+    --dex-stepper-icon-bg-color-completed: rgba(255, 255, 255, 0.03);
+
+    --dex-stepper-icon-border: 1px dashed rgba(255, 255, 255, 0.3);
+    --dex-stepper-icon-border-current: 0;
+    --dex-stepper-icon-border-completed: 1px dashed rgba(255, 255, 255, 0.3);
+
+    --dex-stepper-icon-number-color: var(--dex-white);
+    --dex-stepper-icon-number-color-current: var(--dex-white);
+    --dex-stepper-icon-number-color-completed: var(--dex-white);
+    
+    --dex-stepper-icon-check-color-completed: var(--dex-success);
+
+    --dex-stepper-label-title-opacity: 0.7;
+    --dex-stepper-label-title-opacity-current: 1;
+    --dex-stepper-label-title-opacity-completed: 1;
+
+    --dex-stepper-label-title-color: var(--dex-white);
+    --dex-stepper-label-title-color-current: var(--dex-white);
+    --dex-stepper-label-title-color-completed: var(--dex-white);
+    
+    --dex-stepper-label-desc-opacity: 0.7;
+    --dex-stepper-label-desc-opacity-current: 0.7;
+    --dex-stepper-label-desc-opacity-completed: 0.7;
+
+    --dex-stepper-label-desc-color: var(--dex-white); 
+    --dex-stepper-label-desc-color-current: var(--dex-white);
+    --dex-stepper-label-desc-color-completed: var(--dex-white);
+
+    --dex-stepper-line-border: 1px dashed rgba(255, 255, 255, 0.3);
+}

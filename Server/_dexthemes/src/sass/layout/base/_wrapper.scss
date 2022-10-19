@@ -1,0 +1,100 @@
+//
+// Wrapper
+//
+
+// General mode
+.app-wrapper {
+    display: flex;
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    // Integration
+    .app-wrapper {
+        transition: $app-wrapper-transition;
+        
+        // Header
+        [data-dex-app-header-sticky="on"] & {
+            margin-top: var(--dex-app-header-height-actual);
+        }
+
+        [data-dex-app-header-fixed="true"] & {
+            margin-top: var(--dex-app-header-height);
+        }
+
+        // Toolbar
+        [data-dex-app-toolbar-sticky="on"] & {
+            margin-top: var(--dex-app-toolbar-height-actual, 0px);
+        }
+
+        [data-dex-app-header-fixed="true"][data-dex-app-toolbar-sticky="on"] & {
+            margin-top: calc(var(--dex-app-header-height-actual) + var(--dex-app-toolbar-height-actual, 0px));
+        }
+
+        [data-dex-app-header-fixed="true"][data-dex-app-toolbar-fixed="true"] & {
+            margin-top: calc(var(--dex-app-header-height) + var(--dex-app-toolbar-height, 0px));
+        }
+
+        // Sidebar
+        [data-dex-app-sidebar-fixed="true"] & {
+            margin-left: calc(
+                var(--dex-app-sidebar-width) + 
+                var(--dex-app-sidebar-gap-start, 0px) + 
+                var(--dex-app-sidebar-gap-end, 0px)
+            );
+        }
+
+        // Sidebar Panel
+        [data-dex-app-sidebar-panel-fixed="true"] & {
+            margin-left: calc(
+                var(--dex-app-sidebar-width) + 
+                var(--dex-app-sidebar-gap-start, 0px) + 
+                var(--dex-app-sidebar-gap-end, 0px) +
+                var(--dex-app-sidebar-panel-width) + 
+                var(--dex-app-sidebar-panel-gap-start, 0px) + 
+                var(--dex-app-sidebar-panel-gap-end, 0px)
+            );
+        }
+
+        // Aside
+        [data-dex-app-aside-fixed="true"] & {
+            margin-right: calc(
+                var(--dex-app-aside-width) + 
+                var(--dex-app-aside-gap-start, 0px) + 
+                var(--dex-app-aside-gap-end, 0px)
+            );
+        }
+
+        // Footer
+        [data-dex-app-footer-fixed="true"] & {
+            margin-bottom: var(--dex-app-footer-height);
+        }  
+    }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    // Integration
+    .app-wrapper {
+        transition: $app-wrapper-transition;
+        
+        // Header
+        [data-dex-app-header-sticky-mobile="on"] & {
+            margin-top: var(--dex-app-header-height-actual);
+        }
+
+        [data-dex-app-header-fixed-mobile="true"] & {
+            margin-top: var(--dex-app-header-height);
+        }
+
+        // Toolbar
+        [data-dex-app-header-fixed-mobile="true"][data-dex-app-toolbar-sticky-mobile="on"] & {
+            margin-top: calc(var(--dex-app-header-height-actual) + var(--dex-app-toolbar-height-actual, 0px));
+        }
+
+        // Footer
+        [data-dex-app-footer-fixed-mobile="true"] & {
+            margin-bottom: var(--dex-app-footer-height);
+        }  
+    }
+}

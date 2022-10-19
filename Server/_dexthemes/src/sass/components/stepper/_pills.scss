@@ -1,0 +1,201 @@
+//
+// Stepper Pills
+//
+
+// Base
+.stepper.stepper-pills {
+    --dex-stepper-pills-size: 40px;
+    --dex-stepper-icon-border-radius: 9px;
+    --dex-stepper-icon-check-size: 1rem;
+
+    --dex-stepper-icon-bg-color: var(--dex-primary-light);    
+    --dex-stepper-icon-bg-color-current: var(--dex-primary);
+    --dex-stepper-icon-bg-color-completed: var(--dex-primary-light);
+
+    --dex-stepper-icon-border: 0;
+    --dex-stepper-icon-border-current: 0;
+    --dex-stepper-icon-border-completed: 0;
+
+    --dex-stepper-icon-number-color: var(--dex-primary);
+    --dex-stepper-icon-number-color-current: var(--dex-white);
+
+    --dex-stepper-icon-check-color-completed: var(--dex-primary);
+
+    --dex-stepper-label-title-opacity: 1;
+    --dex-stepper-label-title-opacity-current: 1;
+    --dex-stepper-label-title-opacity-completed: 1;
+
+    --dex-stepper-label-title-color: var(--dex-gray-800);
+    --dex-stepper-label-title-color-current: var(--dex-gray-600);
+    --dex-stepper-label-title-color-completed: var(--dex-text-muted);
+
+    --dex-stepper-label-desc-opacity: 1;
+    --dex-stepper-label-desc-opacity-current: 1;
+    --dex-stepper-label-desc-opacity-completed: 1;
+    
+    --dex-stepper-label-desc-color: var(--dex-text-muted);     
+    --dex-stepper-label-desc-color-current: var(--dex-text-400);
+    --dex-stepper-label-desc-color-completed: var(--dex-gray-400);
+
+    --dex-stepper-line-border: 1px dashed var(--dex-gray-300);
+    
+    // Nav
+    .stepper-nav {
+        display: flex;
+    }
+
+    // Item
+    .stepper-item {
+        display: flex;
+        align-items: center;
+        transition: $transition-link;            
+
+        // Icon
+        .stepper-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: $transition-link;
+            width: var(--dex-stepper-pills-size);
+            height: var(--dex-stepper-pills-size);
+            border-radius: var(--dex-stepper-icon-border-radius);
+            background-color: var(--dex-stepper-icon-bg-color);
+            border: var(--dex-stepper-icon-border);
+            margin-right: 1.5rem;
+
+            .stepper-check {
+                display: none;
+                font-size: var(--dex-stepper-icon-check-size);
+            }
+
+            .stepper-number {
+                font-weight: $font-weight-bold;
+                color: var(--dex-stepper-icon-number-color);
+                font-size: 1.25rem;
+            }
+        }
+
+        // Label
+        .stepper-label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .stepper-title {
+                color: var(--dex-stepper-label-title-color);
+                opacity: var(--dex-stepper-label-title-opacity);
+                font-weight: 600;
+                font-size: 1.25rem;
+                margin-bottom: .3rem;
+            }
+
+            .stepper-desc {
+                opacity: var(--dex-stepper-label-desc-opacity);
+                color: var(--dex-stepper-label-desc-color);
+            }
+        }
+
+        // Current
+        &.current {
+            transition: $transition-link;
+
+            .stepper-icon {
+                transition: $transition-link;
+                background-color: var(--dex-stepper-icon-bg-color-current);
+                border: var(--dex-stepper-icon-border-current);
+
+                .stepper-check {
+                    display: none;
+                }
+
+                .stepper-number {
+                    color: var(--dex-stepper-icon-number-color-current);
+                    font-size: 1.35rem;
+                }
+            }
+
+            .stepper-label {
+                .stepper-title {
+                    opacity: var(--dex-stepper-label-title-opacity-current);
+                    color: var(--dex-stepper-label-title-color-current);
+                }
+
+                .stepper-desc {
+                    opacity: var(--dex-stepper-label-desc-opacity-current);
+                    color: var(--dex-stepper-label-desc-color-current);
+                }
+            }
+        }
+
+        // Completed
+        &.current:last-child,
+        &.completed {
+            .stepper-icon {
+                transition: $transition-link;
+                background-color: var(--dex-stepper-icon-bg-color-completed);
+                border: var(--dex-stepper-icon-border-completed);
+
+                .stepper-check {
+                    color: var(--dex-stepper-icon-check-color-completed);
+                    display: inline-block;
+                }
+
+                .stepper-number {
+                    display: none;
+                }
+            }
+
+            .stepper-label {
+                .stepper-title {
+                    opacity: var(--dex-stepper-label-title-opacity-completed);
+                    color: var(--dex-stepper-label-title-color-completed);
+                }
+
+                .stepper-desc {
+                    opacity: var(--dex-stepper-label-desc-opacity-completed);
+                    color: var(--dex-stepper-label-desc-color-completed);
+                }
+            }
+        }
+    }
+
+    // Column
+    &.stepper-column {
+        // Nav
+        .stepper-nav {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        // Item
+        .stepper-item {
+            flex-direction: column;
+            justify-content: start;
+            align-items: stretch;
+            padding: 0;
+		    margin: 0;
+        }
+
+        // Wrapper 
+        .stepper-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        // Icon
+        .stepper-icon {
+            z-index: 1;
+        }
+
+        // Line
+        .stepper-line {
+            display: block;
+            flex-grow: 1;
+            margin-left: calc(var(--dex-stepper-pills-size) / 2);
+            border-left: var(--dex-stepper-line-border); 
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+    }    
+}

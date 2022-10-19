@@ -1,0 +1,36 @@
+//
+// CSS Variables
+//
+
+:root,
+[data-theme="light"] {
+	// Select2
+	
+	// Prismjs
+	--dex-highlight-bg: #{$highlight-bg};
+
+	--dex-highlight-border: #{$highlight-border};
+
+	--dex-highlight-btn-bg: #{$highlight-btn-bg};
+	--dex-highlight-btn-bg-hover: #{$highlight-btn-bg-hover};
+	--dex-highlight-btn-color: #{$highlight-btn-color};
+	--dex-highlight-btn-color-hover: #{$highlight-btn-color-hover};
+
+	--dex-highlight-scrollbar-color: #{$highlight-scrollbar-color};
+	--dex-highlight-scrollbar-color: #{$highlight-scrollbar-hover-color};
+}
+
+[data-theme="dark"] {
+	// Prismjs
+	--dex-highlight-bg: #{$highlight-bg-dark};
+
+	--dex-highlight-border: #{$highlight-border-dark};
+
+	--dex-highlight-btn-bg: #{$highlight-btn-bg-dark};
+	--dex-highlight-btn-bg-hover: #{$highlight-btn-bg-hover-dark};
+	--dex-highlight-btn-color: #{$highlight-btn-color-dark};
+	--dex-highlight-btn-color-hover: #{$highlight-btn-color-hover-dark};
+
+	--dex-highlight-scrollbar-color: #{$highlight-scrollbar-color-dark};
+	--dex-highlight-scrollbar-color-hover: #{$highlight-scrollbar-hover-color-dark};
+}

@@ -1,0 +1,19 @@
+//
+// Shadow
+//
+
+.shadow-xs {
+    box-shadow: var(--dex-box-shadow-xs);
+}
+
+.shadow-sm {
+    box-shadow: var(--dex-box-shadow-sm);
+}
+
+.shadow {
+    box-shadow: var(--dex-box-shadow);
+}
+
+.shadow-lg {
+    box-shadow: var(--dex-box-shadow-lg);
+}

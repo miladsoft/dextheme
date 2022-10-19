@@ -1,0 +1,95 @@
+//
+// Header
+//
+
+// General mode
+.app-header-menu {
+    .menu {
+        .menu-item {
+            @include menu-link-default-state( 
+                $title-color: var(--dex-gray-700), 
+                $icon-color: var(--dex-gray-500), 
+                $bullet-color: var(--dex-gray-500), 
+                $arrow-color: var(--dex-gray-500),
+                $bg-color: null,
+            );
+            
+            @include menu-link-hover-state( 
+                $title-color: var(--dex-primary), 
+                $icon-color: var(--dex-primary), 
+                $bullet-color: var(--dex-primary), 
+                $arrow-color: var(--dex-primary), 
+                $bg-color: var(--dex-menu-link-bg-color-active)
+            );
+            
+            @include menu-link-show-state( 
+                $title-color: var(--dex-primary), 
+                $icon-color: var(--dex-primary), 
+                $bullet-color: var(--dex-primary), 
+                $arrow-color: var(--dex-primary), 
+                $bg-color: null,
+            );
+
+            @include menu-link-here-state( 
+                $title-color: var(--dex-primary), 
+                $icon-color: var(--dex-primary),
+                $bullet-color: var(--dex-primary), 
+                $arrow-color: var(--dex-primary),
+                $bg-color: var(--dex-menu-link-bg-color-active)
+            );
+
+            @include menu-link-active-state( 
+                $title-color: var(--dex-primary), 
+                $icon-color: var(--dex-primary), 
+                $bullet-color: var(--dex-primary), 
+                $arrow-color: var(--dex-primary), 
+                $bg-color: var(--dex-menu-link-bg-color-active)
+            );                
+        }
+    }
+
+    .menu-extended {
+        --dex-menu-link-bg-color-active: rgba(var(--dex-gray-100-rgb), 0.7);
+        --dex-menu-link-bg-color-hover: rgba(var(--dex-gray-100-rgb), 0.7);
+        
+
+        .menu-custom-icon {
+            background-color: var(--dex-gray-100);    
+        }
+
+        .menu-link {
+            &.active,
+            &:hover {
+                .menu-custom-icon {
+                    background-color: var(--dex-gray-200);    
+                }
+            }    
+        }
+    }
+}
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-header-menu {
+        .menu {
+            // Menu root item
+            > .menu-item {
+                margin-right: 0.5rem;
+
+                > .menu-link {
+                    padding-top: 0.775rem;
+                    padding-bottom: 0.775rem;    
+                    font-weight: $font-weight-semibold;
+                }
+
+                @include menu-link-here-state( 
+                    $title-color: var(--dex-primary), 
+                    $icon-color: var(--dex-primary), 
+                    $bullet-color: var(--dex-primary), 
+                    $arrow-color: var(--dex-primary), 
+                    $bg-color: var(--dex-app-header-base-menu-link-bg-color-active)
+                );
+            }
+        }
+    } 
+}
