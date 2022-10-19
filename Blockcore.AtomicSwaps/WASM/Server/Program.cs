@@ -1,3 +1,5 @@
+using Blockcore.AtomicSwaps.Server.ThemeBase;
+using Blockcore.AtomicSwaps.Server.ThemeBase.libs;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<ITheme, Theme>();
+builder.Services.AddScoped<IBootstrapBase, BootstrapBase>();
+
+IConfiguration configuration = new ConfigurationBuilder()
+                            .AddJsonFile("appsettings.json")
+                            .Build();
+ThemeSettings.init(configuration);
 
 var app = builder.Build();
 
