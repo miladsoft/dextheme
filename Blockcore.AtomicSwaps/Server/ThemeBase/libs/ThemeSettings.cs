@@ -6,6 +6,6 @@ class ThemeSettings
 
     public static void init(IConfiguration configuration)
     {
-        config = configuration.GetSection("DEX").Get<ThemeBase>();
+        config = configuration.GetSection("ThemeSettings").Get<ThemeBase>();
     }
 }
