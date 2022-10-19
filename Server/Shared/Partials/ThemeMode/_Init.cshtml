@@ -1,11 +1,11 @@
-@using Blockcore.AtomicSwaps._dexhemes.libs;
+@using Blockcore.AtomicSwaps.ThemeBase.libs;
 
-@inject IDEXTheme DEXTheme;
+@inject ITheme Theme;
 
 <!--begin::Theme mode setup on page load-->
 <script>
     if (document.documentElement){
-        const defaultThemeMode = "@DEXTheme.getModeDefault()";
+        const defaultThemeMode = "@Theme.getModeDefault()";
         const name = document.body.getAttribute("data-dex-name");
         let themeMode = localStorage.getItem("dex_" + ( name !== null ? name + "_" : "" ) + "theme_mode_value");
         

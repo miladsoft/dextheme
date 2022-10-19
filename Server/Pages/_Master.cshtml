@@ -1,19 +1,19 @@
 @using Microsoft.AspNetCore.Components.Web
-@using Blockcore.AtomicSwaps._dexhemes;
-@using Blockcore.AtomicSwaps._dexhemes.libs
+@using Blockcore.AtomicSwaps.ThemeBase;
+@using Blockcore.AtomicSwaps.ThemeBase.libs
 
 @namespace Blockcore.AtomicSwaps.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @inject IBootstrapBase BootstrapBase
-@inject IDEXTheme DEXTheme
+@inject ITheme Theme
 
 @{
-    BootstrapBase.init(DEXTheme);
+    BootstrapBase.init(Theme);
 }
 
 <!DOCTYPE html>
-<html @Html.Raw(DEXTheme.printHtmlAttributes("html"))>
+<html @Html.Raw(Theme.printHtmlAttributes("html"))>
 <!--begin::Head-->
 
 <head>
@@ -26,17 +26,17 @@
     <meta property="og:type" content="article"/>
     <meta property="og:title" content=""/>
 
-    <link rel="shortcut icon" href="@DEXTheme.getFavicon()"/>
+    <link rel="shortcut icon" href="@Theme.getFavicon()"/>
 
     <!--begin::Fonts-->
-    @foreach (string font in DEXTheme.getFonts())
+    @foreach (string font in Theme.getFonts())
     {
         <link rel="stylesheet" href="@font"/>
     }
     <!--end::Fonts-->
 
     <!--begin::Global Stylesheets(mandatory)-->
-    @foreach (string file in DEXTheme.getGlobalAssets("Css"))
+    @foreach (string file in Theme.getGlobalAssets("Css"))
     {
         <link rel="stylesheet" type="text/css" href="@file"/>
     }
@@ -45,11 +45,11 @@
 <!--end::Head-->
 
 <!--begin::Body-->
-<!body @Html.Raw(DEXTheme.printHtmlAttributes("body")) class='@DEXTheme.printHtmlClasses("body")'>
+<!body @Html.Raw(Theme.printHtmlAttributes("body")) class='@Theme.printHtmlClasses("body")'>
     <partial name="~/Shared/Partials/ThemeMode/_Init.cshtml"></partial>
 
     <!--begin::Global Javascript(mandatory)-->
-    @foreach (string file in DEXTheme.getGlobalAssets("Js"))
+    @foreach (string file in Theme.getGlobalAssets("Js"))
     {
         <script src="@file"></script>
     }

@@ -2,11 +2,11 @@ using Microsoft.JSInterop;
 
 namespace Layout._Helpers;
 
-class DEXThemeHelpers: IDEXThemeHelpers
+class ThemeHelpers: IThemeHelpers
 {
     private IJSRuntime _js;
 
-    public DEXThemeHelpers(IJSRuntime js)
+    public ThemeHelpers(IJSRuntime js)
     {
         _js = js;
     }

@@ -27,10 +27,10 @@
 <!--end::Root-->
 
 @code {
-    private IDEXThemeHelpers _helper;
+    private IThemeHelpers _helper;
 	
     protected override void OnAfterRender(bool firstRender){
-        _helper = new DEXThemeHelpers(JS);
+        _helper = new ThemeHelpers(JS);
 
         //Initialize classes and attributes for layout with dark header
         _helper.addBodyClass("app-black bgi-size-cover bgi-position-center bgi-no-repeat");

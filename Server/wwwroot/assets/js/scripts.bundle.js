@@ -7230,14 +7230,14 @@ var DEXAppLayoutBuilder = function() {
 	var handleThemeMode = function() {
 		var checkLight = document.querySelector('#dex_layout_builder_theme_mode_light');
 		var checkDark = document.querySelector('#dex_layout_builder_theme_mode_dark');
-		var check = document.querySelector('#dex_layout_builder_theme_mode_' + DEXThemeMode.getMode());
+		var check = document.querySelector('#dex_layout_builder_theme_mode_' + ThemeMode.getMode());
 
 		if (checkLight) {
 			checkLight.addEventListener("click", function() {
 				this.checked = true;
 				this.closest('[data-dex-buttons="true"]').querySelector('.form-check-image.active').classList.remove('active');
 				this.closest('.form-check-image').classList.add('active');
-				DEXThemeMode.setMode('light');
+				ThemeMode.setMode('light');
 			});
 		}
 		
@@ -7246,7 +7246,7 @@ var DEXAppLayoutBuilder = function() {
 				this.checked = true;
 				this.closest('[data-dex-buttons="true"]').querySelector('.form-check-image.active').classList.remove('active');
 				this.closest('.form-check-image').classList.add('active');
-				DEXThemeMode.setMode('dark');
+				ThemeMode.setMode('dark');
 			});
 		}
 
@@ -7532,7 +7532,7 @@ var DEXAppSidebar = function () {
 "use strict";
 
 // Class definition
-var DEXThemeMode = function () {
+var ThemeMode = function () {
 	var menu;
 	var callbacks = [];
 	var the = this;
@@ -7717,9 +7717,9 @@ var DEXThemeMode = function () {
 }();
 
 
-// Declare DEXThemeMode for Webpack support
+// Declare ThemeMode for Webpack support
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-    module.exports = DEXThemeMode;
+    module.exports = ThemeMode;
 }
 "use strict";
 

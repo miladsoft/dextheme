@@ -1,5 +1,5 @@
-using Blockcore.AtomicSwaps._dexhemes;
-using Blockcore.AtomicSwaps._dexhemes.libs;
+using Blockcore.AtomicSwaps.ThemeBase;
+using Blockcore.AtomicSwaps.ThemeBase.libs;
 using Blockcore.AtomicSwaps.Data;
 
 
@@ -10,7 +10,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddHttpClient();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddScoped<IDEXTheme, DEXTheme>();
+builder.Services.AddScoped<ITheme, Theme>();
 builder.Services.AddScoped<IBootstrapBase, BootstrapBase>();
 
 IConfiguration configuration = new ConfigurationBuilder()
@@ -19,7 +19,7 @@ IConfiguration configuration = new ConfigurationBuilder()
 
 var app = builder.Build();
 
-DEXThemeSettings.init(configuration);
+ThemeSettings.init(configuration);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

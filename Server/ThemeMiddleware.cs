@@ -1,5 +1,5 @@
-using Blockcore.AtomicSwaps._dexhemes;
-using Blockcore.AtomicSwaps._dexhemes.libs;
+using Blockcore.AtomicSwaps.ThemeBase;
+using Blockcore.AtomicSwaps.ThemeBase.libs;
 
 public class ThemeMiddleware {
     private readonly RequestDelegate _next;
@@ -12,7 +12,7 @@ public class ThemeMiddleware {
         _next = next;
     }
 
-    public async Task InvokeAsync(HttpContext context, IDEXTheme theme, IBootstrapBase bootstrapBase)
+    public async Task InvokeAsync(HttpContext context, ITheme theme, IBootstrapBase bootstrapBase)
     {
         bootstrapBase.init(theme);
 

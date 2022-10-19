@@ -1,6 +1,6 @@
 namespace Layout._Helpers;
 
-public interface IDEXThemeHelpers
+public interface IThemeHelpers
 {
     void addBodyAttribute(string attribute, string value);
 

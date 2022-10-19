@@ -45,17 +45,17 @@
 <_Scrolltop></_Scrolltop>
 
 @code {
-	private IDEXThemeHelpers _helper;
+	private IThemeHelpers _helper;
 
 	protected override void OnInitialized() // = On Page Load
 	{
-		_helper = new DEXThemeHelpers(JS);   
+		_helper = new ThemeHelpers(JS);   
 		_helper.addBodyAttribute("data-dex-app-page-loading", "on");
 	}
 	
 	protected override void OnAfterRender(bool firstRender)
 	{
-		_helper = new DEXThemeHelpers(JS);
+		_helper = new ThemeHelpers(JS);
 		
 		//Initialize classes and attributes for layout with light header
 		_helper.addBodyAttribute("data-dex-app-reset-transition", "true");

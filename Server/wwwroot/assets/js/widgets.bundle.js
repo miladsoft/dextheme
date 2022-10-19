@@ -393,7 +393,7 @@ var DEXCardWidget12 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -566,7 +566,7 @@ var DEXCardWidget13 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -1116,7 +1116,7 @@ var DEXCardWidget8 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -1289,7 +1289,7 @@ var DEXCardWidget9 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -1462,7 +1462,7 @@ var DEXChartsWidget1 = function () {
             initChart();
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -1674,7 +1674,7 @@ var DEXChartsWidget10 = function () {
 
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -1900,7 +1900,7 @@ var DEXChartsWidget11 = function () {
             initChart(chart3, '#dex_charts_widget_11_tab_3', '#dex_charts_widget_11_chart_3', chart3Data, true);
            
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -2427,7 +2427,7 @@ var DEXChartsWidget13 = (function () {
         }); // end am5.ready()
 
         // Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -2898,7 +2898,7 @@ var DEXChartsWidget15 = (function () {
         });
 
         // Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -3164,7 +3164,7 @@ var DEXChartsWidget16 = (function () {
         });
 
         // Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -3278,7 +3278,7 @@ var DEXChartsWidget17 = (function () {
         });
 
         // Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -3460,7 +3460,7 @@ var DEXChartsWidget18 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -3682,7 +3682,7 @@ var DEXChartsWidget19 = (function () {
         });
 
         // Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -3883,7 +3883,7 @@ var DEXChartsWidget19 = (function () {
         });
 
         // Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -4065,7 +4065,7 @@ var DEXChartsWidget2 = function () {
             initChart();
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -4253,7 +4253,7 @@ var DEXChartsWidget20 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -4864,7 +4864,7 @@ var DEXChartsWidget23 = (function () {
 		}); // end am5.ready()
 
 		// Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -9228,7 +9228,7 @@ var DEXChartsWidget24 = (function () {
 		});
 
 		// Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -9560,7 +9560,7 @@ var DEXChartsWidget25 = (function () {
 		}); 
 
 		// Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -9871,7 +9871,7 @@ var DEXChartsWidget25 = (function () {
 		}); // end am5.ready()
 
 		// Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -10066,7 +10066,7 @@ var DEXChartsWidget26 = function () {
             initChart();
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -10228,7 +10228,7 @@ var DEXChartsWidget27 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -10414,7 +10414,7 @@ var DEXChartsWidget28 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -10598,7 +10598,7 @@ var DEXChartsWidget29 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -10785,7 +10785,7 @@ var DEXChartsWidget3 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -10893,7 +10893,7 @@ var DEXChartsWidget30 = (function () {
         });
 
         // Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -11225,7 +11225,7 @@ var DEXChartsWidget31 = (function () {
 		}); // end am5.ready()
 
 		// Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -11424,7 +11424,7 @@ var DEXChartsWidget32 = function () {
             initChart(chart3, '#dex_charts_widget_32_tab_3', '#dex_charts_widget_32_chart_3', chart3Data, false);          
             
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -11672,7 +11672,7 @@ var DEXChartsWidget33 = function () {
             initChart(chart5, '#dex_charts_widget_33_tab_5', '#dex_charts_widget_33_chart_5', chart5Data, chart5Labels, false);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -11927,7 +11927,7 @@ var DEXChartsWidget34 = function () {
             initChart(chart5, '#dex_charts_widget_34_tab_5', '#dex_charts_widget_34_chart_5', chart5Data, chart5Labels, false);
             
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -12184,7 +12184,7 @@ var DEXChartsWidget35 = function () {
             initChart(chart5, '#dex_charts_widget_35_tab_5', '#dex_charts_widget_35_chart_5', chart5Data, chart5Labels, false);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -12390,7 +12390,7 @@ var DEXChartsWidget36 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -12614,7 +12614,7 @@ var DEXChartsWidget37 = function () {
             initChart(chart4, '#dex_charts_widget_37_tab_4', '#dex_charts_widget_37_chart_4', chart4Data, chart4Labels, false);  
             
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -12807,7 +12807,7 @@ var DEXChartsWidget38 = function () {
             initChart();
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -13011,7 +13011,7 @@ var DEXChartsWidget39 = (function () {
 		}); // end am5.ready()
 
 		// Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -13204,7 +13204,7 @@ var DEXChartsWidget4 = function () {
             initChart();
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -13326,7 +13326,7 @@ var DEXChartsWidget5 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -13491,7 +13491,7 @@ var DEXChartsWidget6 = function () {
             initChart(chart);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart.rendered) {
                     chart.self.destroy();
                 }
@@ -13858,7 +13858,7 @@ var DEXChartsWidget8 = function () {
             initChart(chart2, '#dex_chart_widget_8_month_toggle', '#dex_chart_widget_8_month_chart', data2, true);    
 
             // Update chart on theme mode change
-            var handlerId = DEXThemeMode.on("DEX.thememode.change", function() {
+            var handlerId = ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -14297,7 +14297,7 @@ var DEXMapsWidget1 = (function () {
         }); // end am5.ready()
 
         // Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -14439,7 +14439,7 @@ var DEXMapsWidget2 = (function () {
         }); // end am5.ready()
 
         // Update chart on theme mode change
-		DEXThemeMode.on("DEX.thememode.change", function() {     
+		ThemeMode.on("DEX.thememode.change", function() {     
 			// Destroy chart
 			root.dispose();
 
@@ -14770,7 +14770,7 @@ var DEXSlidersWidget1 = function() {
             });
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart1.rendered) {
                     chart1.self.destroy();
                     chart1.rendered = false;
@@ -14990,7 +14990,7 @@ var DEXSlidersWidget3 = function () {
             });
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {                
+            ThemeMode.on("DEX.thememode.change", function() {                
                 if (chart1.rendered) {
                     chart1.self.destroy();
                     chart1.rendered = false;
@@ -15186,7 +15186,7 @@ var DEXTablesWidget14 = function () {
             initChart(chart5, '#dex_table_widget_14_chart_5', chart5Data, true); 
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -15398,7 +15398,7 @@ var DEXTablesWidget15 = function () {
             initChart(chart5, '#dex_table_widget_15_chart_5', chart5Data, true);
             
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }
@@ -15742,7 +15742,7 @@ var DEXTablesWidget16 = function () {
             initChart(chart20, '#dex_stats_widget_16_tab_link_5', '#dex_table_widget_16_chart_5_4', chart20Data, false);
 
             // Update chart on theme mode change
-            DEXThemeMode.on("DEX.thememode.change", function() {
+            ThemeMode.on("DEX.thememode.change", function() {
                 if (chart1.rendered) {
                     chart1.self.destroy();
                 }

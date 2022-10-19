@@ -16,7 +16,7 @@ window.emptyBody = function(){
 
     protected override void OnAfterRender(bool firstRender)
     {
-        JS.InvokeVoidAsync("DEXThemeMode.init");
+        JS.InvokeVoidAsync("ThemeMode.init");
         JS.InvokeVoidAsync("emptyBody");
         if (firstRender)
         {

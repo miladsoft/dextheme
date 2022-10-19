@@ -415,7 +415,7 @@ var DEXWidgets = function () {
         initChart();
 
         // Update chart on theme mode change
-        DEXThemeMode.on("DEX.thememode.change", function() {                
+        ThemeMode.on("DEX.thememode.change", function() {                
             if (chart.rendered) {
                 chart.self.destroy();
             }
@@ -555,7 +555,7 @@ var DEXWidgets = function () {
         initChart();
 
         // Update chart on theme mode change
-        DEXThemeMode.on("DEX.thememode.change", function() {                
+        ThemeMode.on("DEX.thememode.change", function() {                
             if (chart.rendered) {
                 chart.self.destroy();
             }
@@ -710,7 +710,7 @@ var DEXWidgets = function () {
         initChart();
 
         // Update chart on theme mode change
-        DEXThemeMode.on("DEX.thememode.change", function() {                
+        ThemeMode.on("DEX.thememode.change", function() {                
             if (chart.rendered) {
                 chart.self.destroy();
             }
@@ -867,7 +867,7 @@ var DEXWidgets = function () {
         initChart();
 
         // Update chart on theme mode change
-        DEXThemeMode.on("DEX.thememode.change", function() {                
+        ThemeMode.on("DEX.thememode.change", function() {                
             if (chart.rendered) {
                 chart.self.destroy();
             }
@@ -1011,7 +1011,7 @@ var DEXWidgets = function () {
         initChart();
 
         // Update chart on theme mode change
-        DEXThemeMode.on("DEX.thememode.change", function() {                
+        ThemeMode.on("DEX.thememode.change", function() {                
             if (chart.rendered) {
                 chart.self.destroy();
             }
@@ -1170,7 +1170,7 @@ var DEXWidgets = function () {
         initChart();
 
         // Update chart on theme mode change
-        DEXThemeMode.on("DEX.thememode.change", function() {                
+        ThemeMode.on("DEX.thememode.change", function() {                
             if (chart.rendered) {
                 chart.self.destroy();
             }
@@ -1349,7 +1349,7 @@ var DEXWidgets = function () {
         initChart();
 
         // Update chart on theme mode change
-        DEXThemeMode.on("DEX.thememode.change", function() {                
+        ThemeMode.on("DEX.thememode.change", function() {                
             if (chart.rendered) {
                 chart.self.destroy();
             }
@@ -1543,7 +1543,7 @@ var DEXWidgets = function () {
         initChart();
 
         // Update chart on theme mode change
-        DEXThemeMode.on("DEX.thememode.change", function() {                
+        ThemeMode.on("DEX.thememode.change", function() {                
             if (chart.rendered) {
                 chart.self.destroy();
             }
@@ -2987,7 +2987,7 @@ var DEXWidgets = function () {
 
         var labelColor = DEXUtil.getCssVariableValue('--dex-' + 'gray-800');
         var strokeColor = DEXUtil.getCssVariableValue('--dex-' + 'gray-800');
-        var fillColor = DEXThemeMode.getMode() === "dark" ? DEXUtil.getCssVariableValue('--dex-gray-200') : '#D6D6E0';
+        var fillColor = ThemeMode.getMode() === "dark" ? DEXUtil.getCssVariableValue('--dex-gray-200') : '#D6D6E0';
 
         var options = {
             series: [{
