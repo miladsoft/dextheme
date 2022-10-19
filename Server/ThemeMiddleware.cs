@@ -1,5 +1,5 @@
-using Blockcore.AtomicSwaps.Theme._dexhemes;
-using Blockcore.AtomicSwaps.Theme._dexhemes.libs;
+using Blockcore.AtomicSwaps._dexhemes;
+using Blockcore.AtomicSwaps._dexhemes.libs;
 
 public class ThemeMiddleware {
     private readonly RequestDelegate _next;

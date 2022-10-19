@@ -1,4 +1,4 @@
-namespace Blockcore.AtomicSwaps.Theme._dexhemes.libs;
+namespace Blockcore.AtomicSwaps._dexhemes.libs;
 
 // Core theme class
 public class DEXTheme: IDEXTheme

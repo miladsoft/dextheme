@@ -1,4 +1,4 @@
-namespace Blockcore.AtomicSwaps.Theme.Data;
+namespace Blockcore.AtomicSwaps.Data;
 
 public class WeatherForecastService
 {

@@ -1,6 +1,6 @@
-using Blockcore.AtomicSwaps.Theme._dexhemes.libs;
+using Blockcore.AtomicSwaps._dexhemes.libs;
 
-namespace Blockcore.AtomicSwaps.Theme._dexhemes;
+namespace Blockcore.AtomicSwaps._dexhemes;
 
 public class BootstrapBase: IBootstrapBase {
     private IDEXTheme _theme;

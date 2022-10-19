@@ -1,4 +1,4 @@
-namespace Blockcore.AtomicSwaps.Theme._dexhemes.libs;
+namespace Blockcore.AtomicSwaps._dexhemes.libs;
 
 // Base type class for theme settings
 class DEXThemeBase
